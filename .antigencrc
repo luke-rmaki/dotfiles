@@ -1,0 +1,21 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from the default repo (oh-my-zsh).
+antigen bundle git
+antigen bundle command-not-found
+
+# Load bundles from external repos
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle hlissner/zsh-autopair
+antigen bundle sinetoami/web-search
+antigen bundle walesmd/caniuse.plugin.zsh
+
+# Select theme.
+antigen bundle agnoster/agnoster-zsh-theme 
+antigen theme agnoster
+
+# Tell Antigen that you're done.
+antigen apply
